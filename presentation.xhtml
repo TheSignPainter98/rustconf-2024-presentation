@@ -1,0 +1,254 @@
+<!-- data-auto-animate -->
+<!-- fragment -->
+
+<style>
+	.reveal {
+		background-color: #212121 !important;
+		background-image: url('data:image/png;base64,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');
+		background-repeat: no-repeat, no-repeat;
+		background-position: 5% 0%, 0% 0%;
+		background-size: 5%, 100%;
+	}
+
+	.sc {
+		font-variant-caps: small-caps;
+	}
+
+	ul, ol {
+		padding-left: 0;
+	}
+</style>
+<section>
+</section>
+<section>
+	<section>
+		<h3>Fearless Refactoring and</h3>
+		<h3>the Art of Argument-Free Rust</h3>
+		<h5 style="font-style: italic;">Ed Jones, RustConf ’24</h5>
+	</section>
+	<section>
+		<ul>
+			<li>I work at Canonical</li>
+			<li fragment>I like clean code</li>
+			<li fragment>I annoy my coworkers</li>
+		</ul>
+	</section>
+	<section>
+		<img width="80%" src="chair.jpg"/>
+	</section>
+</section>
+<section>
+	<section data-auto-animate data-auto-animate-id="hard-problems">
+		<h2>industry’s hard problems</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="hard-problems">
+		<h2>industry’s hard problems</h2>
+		<ul>
+			<li>requirements</li>
+			<li fragment>politics</li>
+			<li fragment>maintenance</li>
+		</ul>
+	</section>
+	<section data-auto-animate data-auto-animate-id="what-is-maintainable">
+		<h2>what is maintainable?</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="what-is-maintainable">
+		<h2>what is maintainable?</h2>
+		<ul>
+			<li>simple</li>
+			<li fragment>easily-understood</li>
+			<li fragment>predictable</li>
+		</ul>
+	</section>
+	<section data-auto-animate data-auto-animate-id="for-whom-do-we-code">
+		<h2>for whom does a coder code?</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="for-whom-do-we-code">
+		<h2>for whom does a coder code?</h2>
+		<ul>
+			<li>customers and consumers</li>
+			<li fragment>coworkers</li>
+			<li fragment>themselves</li>
+		</ul>
+	</section>
+</section>
+<section>
+	<section data-auto-animate data-auto-animate-id="fearless-refactoring">
+		<h2>Fearless Refactoring</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="fearless-refactoring">
+		<h2>Fearless Refactoring</h2>
+		<h5>
+			after making a change, the next time all tooling passes,
+			</br>
+			code likely still works as intended
+		</h5>
+	</section>
+	<section data-auto-animate data-auto-animate-id="best-practices">
+		<h2>good practices</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="best-practices">
+		<h2>good practices</h2>
+		<ul>
+			<li>match exhaustively</li>
+			<li fragment>mutate in well-defined regions</li>
+			<li fragment>limit unsafety</li>
+		</ul>
+	</section>
+	<section data-auto-animate data-auto-animate-id="what-is-good-code">
+		<h2>good code</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="what-is-good-code">
+		<h2>good code</h2>
+		<ul>
+			<li>predictable</li>
+			<li fragment>clear flow of concepts</li>
+			<li fragment>obvious responsilbilities</li>
+			<li fragment>sparingly weird</li>
+		</ul>
+	</section>
+	<section data-auto-animate data-auto-animate-id="what-is-good-code">
+		<h2>weird code</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="what-is-good-code">
+		<h2>weird code</h2>
+		<ul>
+			<li>draws the eye</li>
+			<li fragment>result of uncoordinated practices</li>
+			<li fragment>resolved by debate</li>
+		</ul>
+	</section>
+</section>
+<section>
+	<section data-auto-animate>
+		<h2>The Art of Argument-free Rust</h2>
+	</section>
+	<section data-auto-animate>
+		<h2>The Art of Argument-free Rust</h2>
+		<h5 style="font-style: italic;">note: not debate-free</h5>
+	</section>
+	<!-- <section data-auto-animate data-auto-animate-id="what-is-good-code"> -->
+	<!-- 	<h2>how to avoid unpleasantness</h2> -->
+	<!-- </section> -->
+	<!-- <section data-auto-animate data-auto-animate-id="what-is-good-code"> -->
+	<!-- 	<h2>how to avoid arguments</h2> -->
+	<!-- 	<ul> -->
+	<!-- 		<li>foster community</li> -->
+	<!-- 		<li fragment>normalise best-practices</li> -->
+	<!-- 		<li fragment></li> -->
+	<!-- 	</ul> -->
+	<!-- </section> -->
+	<section data-auto-animate data-auto-animate-id="what-is-good-code">
+		<h2>how we’ve avoided arguments</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="what-is-good-code">
+		<h2>how we’ve avoided arguments</h2>
+		<ul>
+			<li>office hours (‘Rust Surgery’)</li>
+			<li fragment>cross-team code-review</li>
+			<li fragment>standardisation docs</li>
+		</ul>
+	</section>
+	<section data-auto-animate data-auto-animate-id="standardisation-docs">
+		<h2>standardisation docs</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="standardisation-docs">
+		<h2>standardisation docs</h2>
+		<ul>
+			<li>provide a reference point for best-practices</li>
+			<li fragment>provide rationale for particular decisions</li>
+			<li fragment>show benefits with clear examples</li>
+		</ul>
+	</section>
+	<section>
+		<img width="80%" src="standardisation-doc.png"/>
+	</section>
+	<section data-auto-animate data-auto-animate-id="the-process-hard-mode">
+		<h2>the process</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="the-process-hard-mode">
+		<h2>the process</h2>
+		<ol>
+			<li>note repeated arguments</li>
+			<li fragment>write up generally-applicable notes</li>
+			<li fragment>review with a few experienced Rustaceans</li>
+			<li fragment>review with many Rustaceans</li>
+			<li fragment>release</li>
+		</ol>
+	</section>
+	<section data-auto-animate data-auto-animate-id="the-process-hard-mode">
+		<h2>the process (hard-mode)</h2>
+		<ol>
+			<li>note repeated arguments</li>
+			<li>write up generally-applicable notes</li>
+			<li>review with a few experienced Rustaceans</li>
+			<li>review with many Rustaceans</li>
+			<li>release</li>
+		</ol>
+	</section>
+	<section data-auto-animate data-auto-animate-id="the-process-easy-mode">
+		<h2>the process (easy-mode)</h2>
+	</section>
+	<section data-auto-animate data-auto-animate-id="the-process-easy-mode">
+		<h2>the process (easy-mode)</h2>
+		<h5><code>github.com/canonical/rust-best-practices</code></h5>
+		<h6><qr width="30%">https://github.com/canonical/rust-best-practices</qr></h6>
+	</section>
+</section>
+<section>
+	<section data-auto-animate>
+		<h2>what’s next?</h2>
+	</section>
+	<section data-auto-animate>
+		<h2>what’s next?</h2>
+		<ul>
+			<li>more standards</li>
+			<li fragment>automation</li>
+		</ul>
+	</section>
+</section>
+<section>
+	<section>
+		<h2>thanks for listening!</h2>
+	</section>
+</section>
+<!-- <section> -->
+<!-- 	<section> -->
+<!-- 		<ul> -->
+<!-- 			<li>total technical debt</li> -->
+<!-- 			<li fragment>technical debt from dependencies</li> -->
+<!-- 			<li fragment>code-quality satisfaction</li> -->
+<!-- 			<li fragment>code-review ease</li> -->
+<!-- 			<li fragment>learning hindrance</li> -->
+<!-- 			<li fragment>...</li> -->
+<!-- 		</ul> -->
+<!-- 	</section> -->
+<!-- 	<section data-auto-animate> -->
+<!-- 		<h4>Rust teams were twice as effective as C++ teams</h4> -->
+<!-- 	</section> -->
+<!-- 	<section data-auto-animate> -->
+<!-- 		<h4>Rust teams were twice as effective as C++ teams</h4> -->
+<!-- 		<h4>Rust teams were about as effective as Go teams</h4> -->
+<!-- 	</section> -->
+<!-- 	<section> -->
+<!-- 		<img src="confidence-3.png"/> -->
+<!-- 	</section> -->
+<!-- 	<section> -->
+<!-- 		<img src="productivity-3.png"/> -->
+<!-- 	</section> -->
+<!-- 	<section> -->
+<!-- 		<img src="review-3.png"/> -->
+<!-- 	</section> -->
+<!-- 	<section> -->
+<!-- 		<img src="correctness-3.png"/> -->
+<!-- 	</section> -->
+<!-- </section> -->
+<!-- <section> -->
+<!-- 	<section data-auto-animate> -->
+<!-- 		<h2>let’s gamble</h2> -->
+<!-- 	</section> -->
+<!-- 	<section data-auto-animate> -->
+<!-- 		<h2>let’s gamble</h2> -->
+<!-- 		<h3>...responsibly!</h3> -->
+<!-- 	</section> -->
+<!-- </section> -->

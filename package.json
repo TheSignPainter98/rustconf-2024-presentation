@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "canonical-slides": "github:marco6/canonical-slides#33502d8"
+  },
+  "scripts": {
+    "start": "canonical-slides --title 'Fearless Refactoring' -l ./presentation.xhtml",
+    "build": "canonical-slides --title 'Fearless Refactoring' ./presentation.xhtml -o presentation.min.html"
+  }
+}
