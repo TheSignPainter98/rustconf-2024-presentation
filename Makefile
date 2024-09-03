@@ -4,7 +4,7 @@ presentation: presentation.min.html
 PRESENTATION_SOURCE := presentation.xhtml style.css package-lock.json package.json
 
 presentation.min.html: $(PRESENTATION_SOURCE)
-	npm run build
+	npm run build --theme=./style.scss
 
-start: $(PRESENTATION_SOURCE)
-	npm run start
+serve: $(PRESENTATION_SOURCE)
+	npm run start --theme=./style.scss

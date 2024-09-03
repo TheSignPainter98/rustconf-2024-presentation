@@ -13,6 +13,6 @@ $backgroundColor: #212121;
 }
 
 ul {
-	list-style-position: inside;
+	/* list-style-position: inside; */
 	padding-left: 0;
 }
